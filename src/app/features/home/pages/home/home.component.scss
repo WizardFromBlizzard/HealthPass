@@ -1,5 +1,51 @@
-div{
+// div{
+//     width: 100%;
+//     height: 400px;
+//     background-color: red($color: #000000);
+// }
+
+.home{
+    margin: 0;
     width: 100%;
-    height: 400px;
-    background-color: red($color: #000000);
+
+        height: 100%;
+        background: #a8ff78;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #746909;        
+    
+}
+
+h1{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 24px;
+    word-spacing: 3px;
+}
+
+.header-central{
+    width: 60%;
+}
+
+.text-information{
+    // margin-bottom: 70px;
+}
+
+.sign{
+    border-radius: 40px;
+    padding: 20px 120px;
+    font-size: 24px;
+    margin: 70px 0px;
+    border: none;
+    background-color: #afd819;
+    color: rgb(20, 92, 44);
+    font-weight: 600;
+}
+
+.sign:hover{
+    background-color: #5b7208;
+    color: rgb(27, 207, 87);
+    transition-duration: 0.3s;
 }

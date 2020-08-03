@@ -6,6 +6,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 a{
     color: #71DB77;
     &:hover{
-        color: #25cec6;
+        color: #fdbb2d;
+        transition-duration: 0.3s;
     }
 }
