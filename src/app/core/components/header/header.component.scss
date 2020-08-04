@@ -4,10 +4,16 @@ ul{
     padding: 0;
    li{
        display: inline;
+       padding: 40px;
        a{
            display: inline;
-           padding: 40px;
+           font-size: 18px;
            font-weight: 500;
+           cursor: pointer;
+           &:hover{
+            color: #fdbb2d;
+            transition-duration: 0.3s;
+           }
        }
        
    } 
@@ -25,3 +31,4 @@ ul{
 img{
     margin-right: 100px;
 }
+
