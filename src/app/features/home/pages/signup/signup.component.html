@@ -1,2 +1,29 @@
-<p>signup works!</p>
+<div class="col-12 mb-5 sing-header">
+    
+    <div class="row py-4 justify-content-center">
+        <h2>Poru&#269;i NFC privezak</h2>
+        
+    </div>
+    <div class="row pb-4 justify-content-center">
+
+        <h4 >i po&#269;ni sa zdravim sportskim &#382;ivotom</h4>
+    </div>
+</div>
+
+<div class="col-12">
+    <div class="row justify-content-center">
+        <h3>Izaberite paket</h3>
+    </div>
+</div>
 <button routerLink='/home'>back</button>
+
+<div class="col-12">
+
+    <div class="row justify-content-center">
+    
+        <app-packet-card></app-packet-card>
+        <app-packet-card [packetName]="'Classic'" [packetPrice]="'3.000'" [packetTermins]="'16 termina mese&#268;no'"></app-packet-card>
+        <app-packet-card [packetName]="'Premium'" [packetPrice]="'4.000'" [packetTermins]="'31 termin mese&#268;no'"></app-packet-card>
+        
+    </div>
+</div>

@@ -8,6 +8,7 @@ import * as fromPages from "./pages";
 
 
 
+
 const modules = [SharedModule, HomeRoutingModule];
 
 @NgModule({

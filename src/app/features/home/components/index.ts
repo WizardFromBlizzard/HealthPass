@@ -1,3 +1,5 @@
+import { PacketCardComponent } from './packet-card/packet-card.component';
 
+export const components: any[] = [PacketCardComponent]
 
-export const components: any[] = []
+export { PacketCardComponent } from './packet-card/packet-card.component';
