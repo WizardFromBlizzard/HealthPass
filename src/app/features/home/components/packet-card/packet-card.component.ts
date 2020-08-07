@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-packet-card',
@@ -13,11 +13,16 @@ export class PacketCardComponent implements OnInit {
   @Input() packetTermins: string = '12 TERMINA MESE&#268;NO';
   @Input() packetEnters: string = '1 ULAZAK DNEVNO';
   
+  @Output() emitSign: EventEmitter<void> = new EventEmitter<void>();
 
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
+  signForPacket(packetName){
+    this.emitSign.emit(packetName);
+  }
 }

@@ -3,7 +3,7 @@
         <h3>{{packetName}}</h3>
     </div>
     <div class="row justify-content-center">
-        <span id="packet-price">{{packetPrice}}</span> RSD
+        <span id="packet-price">{{packetPrice}}</span> <span id="valuta">RSD</span>
     </div>
     <hr>
     <div class="row justify-content-center">
@@ -17,6 +17,6 @@
     </div>
     <hr>
     <div class="row justify-content-center">
-        <button>Prijavi se</button>
+        <button class="btn btn-packet" (click)='signForPacket(packetName)'>Prijavi se</button>
     </div>
 </div>

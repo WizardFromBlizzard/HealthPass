@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { AngularMaterial } from './angular-material.module';
 import { CommonModule } from '@angular/common';
 import * as fromComponent from './components/index';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 const entries = [
@@ -10,6 +11,7 @@ const entries = [
 
 const modules = [
     AngularMaterial,
+    ReactiveFormsModule,
     CommonModule
 ]
 @NgModule({

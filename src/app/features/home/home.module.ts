@@ -5,10 +5,6 @@ import * as fromComponents from "./components";
 import * as fromPages from "./pages";
 
 
-
-
-
-
 const modules = [SharedModule, HomeRoutingModule];
 
 @NgModule({

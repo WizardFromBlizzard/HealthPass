@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { LoginDialogComponent } from 'src/app/shared/components';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
@@ -9,7 +11,7 @@ import { LoginDialogComponent } from 'src/app/shared/components';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private router: Router) { }
 
   ngOnInit() {
   }
@@ -19,6 +21,11 @@ export class HeaderComponent implements OnInit {
       width: '400px',
       height: '600px',
     })
+  }
+
+  goToHome(){
+    
+    this.router.navigate(['/home']);
   }
 
 }
